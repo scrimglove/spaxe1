@@ -1,0 +1,9 @@
+body{
+	background-image: url("images/jail-cells.webp");
+	background-size: cover;
+	font-size: 40px;
+	color: white;
+	margin: 300px;
+	text-align: center;
+	text-shadow: 0 0 1px black;
+}
