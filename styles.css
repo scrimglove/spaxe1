@@ -1,3 +1,8 @@
+#hero {
+	--bsize: cover;
+	--hheight: 680px;
+}
+
 body {
     margin: 0;
     color: #82a5ca;
@@ -7,8 +12,8 @@ body {
 
 #hero {
     background-image: url("images/galaxy.webp");
-    background-size: cover; /* cover */
-	height: 680px;
+    background-size: var(--bsize); /* cover */
+	height: var(--hheight);
 	/* height: 85%; */
     padding: 10px 0 40px 0;
 }
@@ -39,3 +44,9 @@ a {
     border-bottom: 4px solid white;
 }
    
+@media all and (max-width: 450px) {
+	#hero {
+		--bsize: 450px;
+		--hheight: 200px;
+	}
+}
